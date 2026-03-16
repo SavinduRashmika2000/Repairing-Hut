@@ -235,10 +235,10 @@ export default function App() {
               </motion.p>
               
               <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                <a href="#services" className="btn-primary w-full sm:w-auto">
+                <a href="#services" className="btn-primary w-full sm:w-[220px] whitespace-nowrap">
                   View Services <ArrowRight size={20} />
                 </a>
-                <a href="#contact" className="btn-secondary w-full sm:w-auto">
+                <a href="#contact" className="btn-secondary w-full sm:w-[220px] whitespace-nowrap">
                   Contact Us
                 </a>
               </motion.div>
