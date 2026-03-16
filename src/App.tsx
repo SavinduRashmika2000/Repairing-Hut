@@ -324,11 +324,11 @@ export default function App() {
           <div className="container mx-auto px-6 relative z-10">
             <div className="max-w-6xl">
                <motion.h2 
-                 className="text-5xl md:text-7xl font-black tracking-tighter mb-16 uppercase leading-none dark:text-black text-white"
+                 className="text-5xl md:text-7xl font-black tracking-tighter mb-16 uppercase leading-none text-white"
                >
                  Fast Service.<br />True Quality.
                </motion.h2>
-               <div className="grid md:grid-cols-3 gap-8">
+               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                   {STEPS.map((step, i) => (
                     <motion.div 
                       key={i}
@@ -339,9 +339,9 @@ export default function App() {
                       className="glass-card-3d p-8 relative overflow-hidden group"
                     >
                        <div className="absolute top-0 right-0 w-24 h-24 bg-white/5 rounded-full -mr-12 -mt-12 blur-2xl" />
-                       <div className="text-6xl font-black mb-8 text-white dark:text-black text-3d leading-none">{step.id}</div>
-                       <h3 className="text-2xl font-black mb-4 uppercase tracking-tighter text-white dark:text-black">{step.title}</h3>
-                       <p className="text-base text-white/90 dark:text-black/80 font-medium leading-relaxed">{step.description}</p>
+                       <div className="text-6xl font-black mb-8 text-white text-3d leading-none">{step.id}</div>
+                       <h3 className="text-2xl font-black mb-4 uppercase tracking-tighter text-white">{step.title}</h3>
+                       <p className="text-base text-white/90 font-medium leading-relaxed">{step.description}</p>
                     </motion.div>
                   ))}
                </div>
