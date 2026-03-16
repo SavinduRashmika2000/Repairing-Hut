@@ -380,7 +380,7 @@ export default function App() {
                   <h2 className="text-5xl font-black tracking-tighter mb-12 uppercase">Visit Our Shop</h2>
                   <div className="space-y-10">
                     <div className="flex items-start gap-6">
-                      <div className="p-4 bg-brand-red rounded-3xl text-white shadow-xl shadow-brand-red/20 transform -rotate-3 hover:rotate-0 transition-transform duration-300">
+                      <div className="p-4 bg-black rounded-3xl text-white shadow-xl shadow-black/20 border border-white/20 transform -rotate-3 hover:rotate-0 transition-transform duration-300">
                         <MapPin size={28} />
                       </div>
                       <div>
