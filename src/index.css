@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-red: #FF0000;
+}
+
+@layer base {
+  * {
+    @apply border-black/10 dark:border-white/10;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply antialiased transition-colors duration-500;
+    @apply text-slate-900 bg-slate-50 selection:bg-brand-red/20;
+    @apply dark:text-white/90 dark:bg-black dark:selection:bg-brand-red/30;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white border border-slate-200 shadow-sm rounded-2xl transition-all duration-500 hover:shadow-xl hover:-translate-y-1;
+    @apply dark:bg-white/[0.03] dark:backdrop-blur-xl dark:border-white/10 dark:shadow-none dark:hover:border-brand-red/50;
+  }
+
+  .glass-nav {
+    @apply bg-white/80 backdrop-blur-xl border-b border-slate-200;
+    @apply dark:bg-black/50 dark:backdrop-blur-xl dark:border-white/10;
+  }
+  
+  .btn-primary {
+    @apply bg-brand-red hover:bg-red-600 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:scale-105 active:scale-95 flex items-center justify-center gap-2 shadow-lg shadow-brand-red/20;
+  }
+  
+  .btn-secondary {
+    @apply bg-transparent hover:bg-slate-200 text-black border-black px-6 py-3 rounded-full font-bold transition-all duration-300 hover:scale-105 active:scale-95 flex items-center gap-2 border-2;
+    @apply dark:bg-white/10 dark:hover:bg-white/20 dark:text-white dark:border-white/10 dark:font-medium dark:border;
+  }
+
+  .glass-card-3d {
+    @apply bg-white/5 backdrop-blur-xl border border-white/20 rounded-[32px] transition-all duration-500;
+    box-shadow: 
+      0 20px 50px rgba(0,0,0,0.3),
+      inset 0 1px 1px rgba(255,255,255,0.1),
+      inset 0 -1px 20px rgba(0,0,0,0.2);
+    transform: perspective(1000px) rotateX(0deg);
+  }
+
+  .glass-card-3d:hover {
+    @apply -translate-y-4 border-white/40;
+    box-shadow: 
+      0 40px 80px rgba(0,0,0,0.5),
+      inset 0 1px 1px rgba(255,255,255,0.2),
+      inset 0 -1px 30px rgba(0,0,0,0.3);
+    transform: perspective(1000px) rotateX(2deg);
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-br from-white via-white to-white/50;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-black;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-white/10 rounded-full hover:bg-white/20 transition-colors;
+}
