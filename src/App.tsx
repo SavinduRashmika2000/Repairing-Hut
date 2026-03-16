@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import type { Variants } from 'framer-motion'
-import { ArrowRight, Award, Battery, CheckCircle, Clock, Cpu, Facebook, Heart, MapPin, Menu, Monitor, Moon, PhoneCall, Settings, Shield, Smartphone, Star, Sun, ThumbsUp, X, Zap } from 'lucide-react'
+import { ArrowRight, Battery, Clock, Cpu, Facebook, MapPin, Menu, Monitor, Moon, PhoneCall, Shield, Smartphone, Sun, ThumbsUp, X, Zap } from 'lucide-react'
 
 // Constants
 const SERVICES = [
