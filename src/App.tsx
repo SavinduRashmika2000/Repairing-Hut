@@ -355,54 +355,37 @@ export default function App() {
         {/* Location Section */}
         <section id="location" className="py-32">
           <div className="container mx-auto px-6">
-            <div className="grid lg:grid-cols-2 gap-20 items-center">
+            <div className="max-w-xl mx-auto text-center">
               <motion.div
-                initial={{ opacity: 0, rotate: -2 }}
-                whileInView={{ opacity: 1, rotate: 0 }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="h-[500px] rounded-[40px] overflow-hidden shadow-2xl border-8 border-white dark:border-white/5"
               >
-                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1142.1627916965038!2d80.09346!3d7.14362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2fb781b4d06a1%3A0x867332c943896b0c!2sRepairing%20Hut!5e0!3m2!1sen!2slk!4v1710574000000!5m2!1sen!2slk" 
-                  width="100%" 
-                  height="100%" 
-                  style={{ border: 0 }} 
-                  allowFullScreen 
-                  loading="lazy" 
-                ></iframe>
-              </motion.div>
-              <div>
-                <motion.div
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                >
-                  <h2 className="text-5xl font-black tracking-tighter mb-12 uppercase">Visit Our Shop</h2>
-                  <div className="space-y-10">
-                    <div className="flex items-start gap-6">
-                      <div className="p-4 bg-brand-red rounded-3xl text-white shadow-xl shadow-brand-red/20">
-                        <MapPin size={28} />
-                      </div>
-                      <div>
-                        <h3 className="text-2xl font-bold mb-2">Location</h3>
-                        <p className="text-slate-500 dark:text-white/60 text-xl leading-relaxed font-medium">
-                          Repairing Hut<br />
-                          424/3/1 Negombo Road<br />
-                          Nittambuwa, Sri Lanka
-                        </p>
-                      </div>
+                <h2 className="text-5xl font-black tracking-tighter mb-12 uppercase">Visit Our Shop</h2>
+                <div className="space-y-12 flex flex-col items-center">
+                  <div className="flex flex-col items-center gap-6">
+                    <div className="p-4 bg-brand-red rounded-3xl text-white shadow-xl shadow-brand-red/20 transform -rotate-3 hover:rotate-0 transition-transform duration-300">
+                      <MapPin size={28} />
                     </div>
-                    <a 
-                      href="https://maps.app.goo.gl/ZpSR3GsBz6g4biXC9" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="btn-primary w-full md:w-fit"
-                    >
-                      Get Directions <ArrowRight size={20} />
-                    </a>
+                    <div>
+                      <h3 className="text-2xl font-bold mb-3">Location</h3>
+                      <p className="text-slate-500 dark:text-white/60 text-base leading-relaxed font-medium">
+                        Repairing Hut<br />
+                        424/3/1 Negombo Road<br />
+                        Nittambuwa, Sri Lanka
+                      </p>
+                    </div>
                   </div>
-                </motion.div>
-              </div>
+                  <a 
+                    href="https://maps.app.goo.gl/ZpSR3GsBz6g4biXC9" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="btn-primary !px-8 !py-3 !text-base w-full sm:w-auto shadow-2xl shadow-brand-red/40"
+                  >
+                    Get Directions <ArrowRight size={20} />
+                  </a>
+                </div>
+              </motion.div>
             </div>
           </div>
         </section>
