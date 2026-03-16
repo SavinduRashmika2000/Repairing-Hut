@@ -226,11 +226,11 @@ export default function App() {
                 />
               </motion.div>
               
-              <motion.h1 variants={itemVariants} className="text-7xl md:text-[120px] font-black tracking-tighter leading-[0.9] mb-8 text-slate-900 dark:text-white">
+              <motion.h1 variants={itemVariants} className="text-6xl md:text-[100px] font-black tracking-tighter leading-[0.9] mb-6 text-slate-900 dark:text-white">
                 REPAIRING <span className="text-brand-red">HUT</span>
               </motion.h1>
 
-              <motion.p variants={itemVariants} className="text-lg md:text-2xl text-slate-600 dark:text-white/60 mb-12 max-w-2xl mx-auto font-medium">
+              <motion.p variants={itemVariants} className="text-base md:text-xl text-slate-600 dark:text-white/60 mb-10 max-w-2xl mx-auto font-medium">
                 Get everything done with us. We provide professional, high-precision mobile phone repair services that bring your devices back to life.
               </motion.p>
               
@@ -298,8 +298,8 @@ export default function App() {
                   <div className="mb-8 w-fit icon-container-invert">
                      {service.icon}
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 tracking-tight">{service.title}</h3>
-                  <p className="text-slate-500 dark:text-white/60 leading-relaxed text-sm font-medium">
+                  <h3 className="text-xl font-bold mb-3 tracking-tight">{service.title}</h3>
+                  <p className="text-slate-500 dark:text-white/60 leading-relaxed text-xs font-medium">
                     {service.description}
                   </p>
                 </motion.div>
@@ -326,24 +326,25 @@ export default function App() {
                <motion.h2 
                  initial={{ opacity: 0, x: -50 }}
                  whileInView={{ opacity: 1, x: 0 }}
-                 className="text-6xl md:text-9xl font-black tracking-tighter mb-24 uppercase leading-none"
+                 transition={{ duration: 0.4 }}
+                 className="text-5xl md:text-7xl font-black tracking-tighter mb-16 uppercase leading-none"
                >
                  Fast Service.<br />True Quality.
                </motion.h2>
-               <div className="grid md:grid-cols-3 gap-10">
+               <div className="grid md:grid-cols-3 gap-8">
                   {STEPS.map((step, i) => (
                     <motion.div 
                       key={i}
-                      initial={{ opacity: 0, y: 50 }}
+                      initial={{ opacity: 0, y: 30 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
-                      transition={{ delay: i * 0.2, type: "spring", stiffness: 100 }}
-                      className="glass-card-3d p-12 relative overflow-hidden group"
+                      transition={{ delay: i * 0.1, duration: 0.4 }}
+                      className="glass-card-3d p-8 relative overflow-hidden group"
                     >
-                       <div className="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-16 -mt-16 blur-2xl" />
-                       <div className="text-8xl font-black mb-12 text-white text-3d leading-none">{step.id}</div>
-                       <h3 className="text-3xl font-black mb-6 uppercase tracking-tighter">{step.title}</h3>
-                       <p className="text-lg text-white/90 font-medium leading-relaxed">{step.description}</p>
+                       <div className="absolute top-0 right-0 w-24 h-24 bg-white/5 rounded-full -mr-12 -mt-12 blur-2xl" />
+                       <div className="text-6xl font-black mb-8 text-white text-3d leading-none">{step.id}</div>
+                       <h3 className="text-2xl font-black mb-4 uppercase tracking-tighter">{step.title}</h3>
+                       <p className="text-base text-white/90 font-medium leading-relaxed">{step.description}</p>
                     </motion.div>
                   ))}
                </div>
