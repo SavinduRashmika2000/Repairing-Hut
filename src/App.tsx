@@ -385,21 +385,21 @@ export default function App() {
                       </div>
                       <div>
                         <h3 className="text-2xl font-bold mb-2">Location</h3>
-                        <p className="text-slate-500 dark:text-white/60 text-base leading-relaxed font-medium">
+                        <p className="text-slate-500 dark:text-white/60 text-base leading-relaxed font-medium mb-6">
                           Repairing Hut<br />
                           424/3/1 Negombo Road<br />
                           Nittambuwa, Sri Lanka
                         </p>
+                        <a 
+                          href="https://maps.app.goo.gl/ZpSR3GsBz6g4biXC9" 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="btn-primary !px-6 !py-2.5 !text-sm flex w-fit shadow-lg shadow-brand-red/20"
+                        >
+                          Get Directions <ArrowRight size={18} />
+                        </a>
                       </div>
                     </div>
-                    <a 
-                      href="https://maps.app.goo.gl/ZpSR3GsBz6g4biXC9" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="btn-primary !px-6 !py-2.5 !text-sm w-full md:w-fit shadow-lg shadow-brand-red/20"
-                    >
-                      Get Directions <ArrowRight size={18} />
-                    </a>
                   </div>
                 </motion.div>
               </div>
