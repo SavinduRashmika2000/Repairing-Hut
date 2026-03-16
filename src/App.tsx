@@ -424,7 +424,7 @@ export default function App() {
                   <h2 className="text-6xl font-black tracking-tighter mb-8 uppercase leading-none">Need a fast repair?</h2>
                   <p className="text-xl text-white/50 mb-12 font-medium">Quick response, professional care, and direct communication.</p>
                   <div className="flex gap-4">
-                     <a href="https://www.facebook.com/share/g/1HfKkzbPUN/?mibextid=wwXIfr" target="_blank" className="p-5 bg-white/5 hover:bg-brand-red transition-all rounded-full border border-white/10">
+                     <a href="https://www.facebook.com/share/g/1HfKkzbPUN/?mibextid=wwXIfr" target="_blank" className="p-5 bg-white/5 hover:bg-[#1877F2] transition-all rounded-full border border-white/10">
                         <Facebook size={32} />
                      </a>
                   </div>
