@@ -443,8 +443,8 @@ export default function App() {
                       whileHover={{ scale: 1.02 }}
                       className="bg-white/[0.03] border border-white/10 p-8 rounded-[32px] flex flex-col sm:flex-row items-center gap-8 min-w-[320px] backdrop-blur-sm"
                     >
-                      <div className="w-16 h-16 bg-brand-red rounded-full flex items-center justify-center shadow-lg shadow-brand-red/30">
-                         <PhoneCall size={28} />
+                      <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center shadow-lg shadow-black/20">
+                         <PhoneCall size={28} className="text-white" />
                       </div>
                       <div className="text-center sm:text-left">
                         <h3 className="text-white text-sm font-black uppercase tracking-widest mb-1">{person.name}</h3>
