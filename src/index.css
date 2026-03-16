@@ -39,7 +39,7 @@
   }
   
   .btn-secondary {
-    @apply bg-transparent hover:bg-slate-200 text-black border-black px-6 py-3 rounded-full font-bold transition-all duration-300 hover:scale-105 active:scale-95 flex items-center gap-2 border-2;
+    @apply bg-transparent hover:bg-slate-200 text-black border-black px-6 py-3 rounded-full font-bold transition-all duration-300 hover:scale-105 active:scale-95 flex items-center justify-center gap-2 border-2;
     @apply dark:bg-white/10 dark:hover:bg-white/20 dark:text-white dark:border-white/10 dark:font-medium dark:border;
   }
 

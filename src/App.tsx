@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import type { Variants } from 'framer-motion'
-import { Phone, MapPin, Menu, X, Sun, Moon, Smartphone, Monitor, Battery, Cpu, Facebook, ArrowRight, Shield, Zap, Clock, ThumbsUp } from 'lucide-react'
+import { ArrowRight, Award, Battery, CheckCircle, Clock, Cpu, Facebook, Heart, MapPin, Menu, Monitor, Moon, PhoneCall, Settings, Shield, Smartphone, Star, Sun, ThumbsUp, X, Zap } from 'lucide-react'
 
 // Constants
 const SERVICES = [
@@ -444,10 +444,10 @@ export default function App() {
                       className="bg-white/[0.03] border border-white/10 p-8 rounded-[32px] flex flex-col sm:flex-row items-center gap-8 min-w-[320px] backdrop-blur-sm"
                     >
                       <div className="w-16 h-16 bg-brand-red rounded-full flex items-center justify-center shadow-lg shadow-brand-red/30">
-                         <Phone size={28} />
+                         <PhoneCall size={28} />
                       </div>
                       <div className="text-center sm:text-left">
-                        <h3 className="text-white/40 text-sm font-black uppercase tracking-widest mb-1">{person.name}</h3>
+                        <h3 className="text-white text-sm font-black uppercase tracking-widest mb-1">{person.name}</h3>
                         <p className="text-3xl font-black mb-4 text-white hover:text-brand-red transition-colors">
                           {person.phone}
                         </p>
