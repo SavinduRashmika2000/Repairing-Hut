@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://repairing-hut.netlify.app/sitemap.xml
+Sitemap: https://repairing-hut.vercel.app/sitemap.xml

@@ -6,6 +6,6 @@ import Sitemap from 'vite-plugin-sitemap'
 export default defineConfig({
   plugins: [
     react(),
-    Sitemap({ hostname: 'https://repairing-hut.netlify.app' })
+    Sitemap({ hostname: 'https://repairing-hut.vercel.app' })
   ],
 })
