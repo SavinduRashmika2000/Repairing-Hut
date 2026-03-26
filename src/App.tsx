@@ -226,12 +226,13 @@ export default function App() {
                 />
               </motion.div>
               
-              <motion.h1 variants={itemVariants} className="text-6xl md:text-[100px] font-black tracking-tighter leading-[0.9] mb-6 text-slate-900 dark:text-white">
-                REPAIRING <span className="text-brand-red">HUT</span>
+              <motion.h1 variants={itemVariants} className="text-6xl md:text-[100px] font-black tracking-tighter leading-[0.9] mb-6 text-slate-900 dark:text-white flex flex-col items-center">
+                <span>REPAIRING <span className="text-brand-red">HUT</span></span>
+                <span className="text-3xl md:text-5xl text-slate-700 dark:text-slate-300 mt-2">NITTAMBUWA</span>
               </motion.h1>
 
               <motion.p variants={itemVariants} className="text-base md:text-xl text-slate-600 dark:text-white/60 mb-10 max-w-2xl mx-auto font-medium">
-                Get everything done with us. We provide professional, high-precision mobile phone repair services that bring your devices back to life.
+                Get everything done with us. Repairing Hut Nittambuwa provides professional, high-precision mobile phone repair services to bring your devices back to life.
               </motion.p>
               
               <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-6 justify-center items-center">
